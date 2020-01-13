@@ -11,6 +11,6 @@ import com.tcs.ahold.mdm.attributeservice.model.Attribute;
 @Repository
 public interface AttributeRepository extends CrudRepository<Attribute, String>{
 	
-	Optional<Attribute> findByAttName(String attName);
+	Optional<Attribute> findByAttrName(String attName);
 
 }

@@ -38,6 +38,13 @@ public class AttributeController {
 				.errorDec("").Result(attsrv.getByAttributeName(name)).build() );
 	}
 	
+	@RequestMapping(value = "/getAllAttribute")
+	public ResponseEntity<Response> getAllAttribute()
+	{
+		return ResponseEntity.ok(Response.builder().statusCode("200")
+				.errorDec("").Result(attsrv.getAll()).build() );
+	}
+	
 	@RequestMapping(value = "/addModifyCategory", method = RequestMethod.POST)
 	public ResponseEntity<Response> addModifyAttribute(@RequestBody Attribute att, @RequestParam String activity)
 	{

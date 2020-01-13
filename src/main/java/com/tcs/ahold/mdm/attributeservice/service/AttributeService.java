@@ -32,7 +32,7 @@ public class AttributeService {
 	
 	public Optional<Attribute> getByAttributeName(String name)
 	{
-		return attrepo.findByAttName(name);
+		return attrepo.findByAttrName(name);
 	}
 	
 	public List<Attribute> getAll()
