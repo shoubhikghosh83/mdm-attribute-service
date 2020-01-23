@@ -2,8 +2,8 @@ server:
  port: 8095
 spring:
  datasource:
-  url: jdbc:sqlserver://sqdb-masterdata.database.windows.net:1433;database=db_masterdata;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
-  username: sysadmin@sqdb-masterdata
+  url: jdbc:sqlserver://sqdb-masterdata-aks.database.windows.net:1433;database=db_masterdata;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+  username: sysadmin@sqdb-masterdata-aks
   password: Test@poc
   jpa:
    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
