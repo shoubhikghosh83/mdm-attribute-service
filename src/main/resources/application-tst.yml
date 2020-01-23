@@ -1,0 +1,12 @@
+server:
+ port: 8095
+spring:
+ datasource:
+  url: jdbc:sqlserver://sqdb-masterdata.database.windows.net:1433;database=db_masterdata;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+  username: sysadmin@sqdb-masterdata
+  password: Test@poc
+  jpa:
+   database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+   show-sql: true
+ main:
+  allow-bean-definition-overriding: true
